@@ -1,1 +1,279 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-image: url('black background.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    .head {
+      background: url('ka.jpg') center/cover no-repeat;
+      text-align: center;
+      height: 150px;
+      font-size: 60px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    li a {
+      display: block;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    li a:hover {
+      background-color: #444;
+      font-size: 20px;
+    }
+
+    .text {
+      text-align: center;
+      font-size: 40px;
+      margin: 40px 20px;
+      color: skyblue;
+    }
+
+    .story {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: justify;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .image {
+      height: 200px;
+      width: 260px;
+      border: double 5px white;
+      overflow: hidden;
+      transition: transform 0.4s ease;
+    }
+
+    .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .image:hover {
+      transform: scale(1.1);
+    }
+
+    .card-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .card {
+      width: 225px;
+      height: 350px;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.5s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .card .layer {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 75%;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .card .info {
+      position: absolute;
+      bottom: -50px;
+      padding: 15px;
+      opacity: 0;
+      transition: bottom 0.5s, opacity 1s;
+      color: white;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card:hover .layer {
+      opacity: 1;
+    }
+
+    .card:hover .info {
+      bottom: 0;
+      opacity: 1;
+    }
+
+    .info button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      background: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 16px;
+      padding: 20px;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="head">MY WEBSITE</div>
+
+  <ul>
+    <li><a href="#">LOGOUT</a></li>
+    <li><a href="https://www.facebook.com/share/1CNdSAnuJh/">CONTACT ME</a></li>
+    <li><a href="#">ABOUT</a></li>
+  </ul>
+
+  <h2 class="text">STORY ABOUT MY FAM AND MY BOYFIE</h2>
+
+  <div class="story">
+    <p>First of all, I thank God for giving me a family that is so supportive of everything. Family is the cornerstone of our lives, providing us with a sense of belonging, love, and support that shapes our identity and influences our growth. From the moment we are born, our family members are there to nurture, guide, and protect us. They instill in us values, beliefs, and traditions that form the foundation of our character.</p>
+
+
+    <p>Secondly, my boyfriend is my strength. I'm grateful to have someone who supports me fully. He understands me, values me, and makes me feel appreciated. He's not just my partner, but my friend, my lover, and my confidant.</p>
+  </div>
+
+  <h2 class="text">BONDING TIME👩‍❤️‍👨</h2>
+  <div class="main">
+    <div class="image"><img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/488910857_1719455285621242_8662862232193250702_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGQAxEtHuVObILKtqLZKgb5Kj5lE5A5Yi4qPmUTkDliLoJL3QTUW9JHUYP7DMLioIUevk-Ai9BTRNkP2t4U3cxe&_nc_ohc=WnjD0qj8HDAQ7kNvwGnrlst&_nc_oc=AdlKW3nzVvI3-YwnYevLF4lZnTM6wJl9EU6JYUsqivlfALt2xD_rj4t3R9tmufVS8iY&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=gieaedwDuZ18-lea6ajiUw&oh=00_AfHxCdwNVYaPg1BRexVcfrQWAF3gr-lmq8IzkYxp02nclg&oe=67F9475D" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/489805149_1719453915621379_5346919616815532912_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGDLKiaZRsoeV8MdYJuKiwe7dydeV1Aouzt3J15XUCi7DxAVzAQmiRym3c6WSwLwHvAYfFyWVnATBaw3t3AcNhx&_nc_ohc=mFiuHh7BlAsQ7kNvwGcxlPN&_nc_oc=AdkXlzvvCYs2Jo7ugWFxd1aJiwXlWHmbzz0_E0BZvfiO_c-PQlsq_z2W2BPEkAEnL1s&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=2yoqYh8nrj7i0e9EYFdjQA&oh=00_AfEHh66sdP19M9uSHgEX4zhgQW91BP3A6so0-H9FmYl-Eg&oe=67F954AB" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/489737386_1719442812289156_7411353438115780015_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFgSTcjJcrovlOzT0Gr57mVEByvyAwNDtsQHK_IDA0O223KY_fNB_-NwuZGurpejcUyqk14GysrexdbUddsSlsx&_nc_ohc=rVCGMY0H_QsQ7kNvwGOFk5E&_nc_oc=AdmKGiLzHt13i7hu2cGH5Ve7itlYmEsQ5owVsgo7K4NeK3ppMzPZSewfxyXsdpn_X8w&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=HTpP0jnsC_ET9JGNf4T_Qg&oh=00_AfElKCrmc9z1l4TkVSPYMJLeGvFOd63gYMok5FL9B3ld8g&oe=67F961B1" alt="bonding"></div>
+    <div class="image"><img src=" https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/489378045_1719442782289159_299396539432250220_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHav-gp4kzNjCvNL7FGloDg3o_otc0eOa_ej-i1zR45r3bYF0t84CAdgK9a_tJJMw5B_bROqmljydQ7jL03gqXd&_nc_ohc=eD9l2uigDlcQ7kNvwHAOMRK&_nc_oc=Adl_oacNQ0SvOtUi-_ta_W_WFgsNE-GO3FhWCiFGfVwoLtgBB0mFogo5qNuT79uwL_g&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=Y3c7SGoGqGINfGQBjlmDjw&oh=00_AfGMo11n3hCE6HaHW8ZTZ0qm6FFbQw0WU8ebxFnRxxr3Tw&oe=67F94278" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/489766098_1719442742289163_1921502293533129997_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEkoAMEx-yHaWgFE5p2Snnnk0z4_E9I3diTTPj8T0jd2K7fW0IhbfiqjbiZoalRjL95rXOxTE-ixjj6JPMbtglE&_nc_ohc=lvIQZ-O2b2AQ7kNvwFXYO4U&_nc_oc=Adm_Gc_JZ_J0IhT6GpEzHZqwa8P-l4JZrxQOaRICIPQWYIV4rj4f9oTLOxXNJdQUrPM&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=C5Qrxkb1xiZiohnF__fEig&oh=00_AfFT_4n0DgLwnjhV90yUyxDeb0X65m-y-VU8fFwHsOHYYw&oe=67F93DEA" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/488923827_1719442702289167_2222062805493456595_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJM7wPR89A3Uq6xMuL3IMLcU2PcgnxeuhxTY9yCfF66Gdt10rnY_TCsdlc5PYZw62Y8M-IDeILj7g429yxKCq7&_nc_ohc=gltNUj3bASQQ7kNvwE3aOfF&_nc_oc=Adn2p_8FitVKNhMIARqJIt-BXGHzSreNwnWiNvGW52LCMOMpah0a97wkDoSVWRXf9y8&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=3sFzX1yNBvhO98uJYzvZGg&oh=00_AfEmOX_6648iA9s8j97dWXv96sl_qXJ8oosrFKeb2Al9OQ&oe=67F961F8" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/489956247_1719442658955838_7959840511980954709_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFP3A3z8uDcQu6buvKXKgUe0WNWDHdr24vRY1YMd2vbi8yDzTSEYyGqnFxFTD7ol67wIxGbEjhuNDGB1nI00HEv&_nc_ohc=jak0TlWqvKgQ7kNvwEx-xEv&_nc_oc=Admg4fo5sH4DmTGGC2YuDs9OGh7QTEn1gVvCfh0tAT2gXbjUnLXiWuG69SSFS-nYqVA&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=RWQ76Gh_Hy_kUUCuewgh8w&oh=00_AfFkKl2w-HYWSRmHLgvROf-yqWYHNJplRP8i88cbaBKoJQ&oe=67F95D4F" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/489018759_1719442612289176_3543019569915128959_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFoW64D2Vwv36QFfBFdnYo1F_2IPcLG-lMX_Yg9wsb6Uwm2niUPBoNg_RywZvXJsTsF9BvLfpppMUhA3k735KXz&_nc_ohc=vGKBw7JuZdEQ7kNvwGs4_kL&_nc_oc=AdkcmYiBeajs7-25zQtozZBrwaR_lr-pTQQwlMhcmQ9VRxVMVUjVkPKpB6w1lcT-AWA&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=XyuIisRQxZ3k3-xmljaNyw&oh=00_AfEwKjVOaZe7kNhHH6jRvEDImDWceCJtgs-ELkokYE-Xkg&oe=67F95DEF" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/488911786_1719443012289136_3122996067628888612_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeERE9AZqRufY77_SDlqGCdiqfc6t-rKKrqp9zq36soquvcPyZETmH_FAGbZ0mOIRTQfpATwoLXKxm6635lf0Tnq&_nc_ohc=_ohle_44Kv0Q7kNvwF3wQTu&_nc_oc=AdnXvkXmI-YyVEuH4E7rolTFwnMDiZrRSK_5a-LzVLMXI9Def4QuafpfUWAHjiJ1aQQ&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=G4XuH5WAYZSN8NN58UQjfw&oh=00_AfGrgL_Pfh3tljQRAyBY5mpCM0lcuc0ER09yS1RhmLC4KA&oe=67F94B6A" alt="bonding"></div>
+    <div class="image"><img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/488936362_1719442505622520_6797609725680940163_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHm83VCRELKLIRhkvzMEbacUeM0FFfznQJR4zQUV_OdAlDdyAYOiMH-nxpIWCUov6e-b7bm-z0najongFwKEKpb&_nc_ohc=a0mM3S9ozVQQ7kNvwHXZVmZ&_nc_oc=AdlnJ27uRRpVqRsW4m8HyMFEX4_DnZnOXBAzZdstuptKCemgDwuZvTKDXSK7HWzTyBs&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=5fF2fIFCFZFr7FtvNpswMw&oh=00_AfH5gTDtLqEAK0EfdIsyojA_Kw_UKaQg3H-2VLEsdyxKNA&oe=67F959CE" alt="bonding"></div>
+  </div>
+
+  <h2 class="text">SOMEWHERE IN BALER🌊🌊</h2>
+<div class="card-group">
+  <!-- Existing cards... -->
+
+  <!-- New images -->
+  <div class="card">
+    <img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/489820133_1719455322287905_883958486616312795_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF_DWVztmw4O5Wu8xE0o-h78JF7NCKnPc_wkXs0Iqc9z4rwmih8nWRCjhX0xu5mh8fr01SXEjpGkKOZSubahi1R&_nc_ohc=BGAq-i5ypPYQ7kNvwGcVz8D&_nc_oc=AdkQLVyceRSdO2rYnXYWIlJJCI1DlId03BhlZufi1eled_LFpYo9wQfSJ3LQx8sivxY&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=cyDZb6ei2xowRuOLCsy5Fw&oh=00_AfE94CF6oLVHj1FZaqnL56irtmTyycWTvlfJRBjeAhQIeQ&oe=67F9320C" alt="baler">
+    <div class="layer"></div>
+    <div class="info">
+      <p>Unforgettable Baler Memories</p>
+      <button>Explore</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/489045310_1719455358954568_6277415949134169626_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFDCqJMGTkuWpwAsq361PtkC9ozSEcHLsIL2jNIRwcuwv4kKOIcbnGfqYrgzOMTD40Gmi8chfL_npVwAyhmNYfl&_nc_ohc=UI0G8x6OhfoQ7kNvwHHajQ9&_nc_oc=AdmzoXT-MGPQUuNHchx0KtG-iFZZhf87gmGEOBxKDjjVLY8cxlE5RbtkTFolfBQhuwQ&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=JXd2VLFjIbnzsz0yHHz7Mg&oh=00_AfEkPjpWWU5RUtipB2ne4nsiMojGifmUScz73t2xImqO1g&oe=67F9402D" alt="baler">
+    <div class="layer"></div>
+    <div class="info">
+      <p>Beautiful view</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/488934991_1719455455621225_6091304370274141108_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGdOPm2Pq0dPhdZPKDJax1U576oaH8DpkHnvqhofwOmQU0CKmMJzcTbICUIaHEJIJrJb0jOOdO_rMQgHs1YqdaC&_nc_ohc=H6w32USP1fIQ7kNvwGapnpu&_nc_oc=Adn1kqQhR6cfmiDehHujNpI3RIxRIy_R4iJy3VrD3ETOGAU9-ibf_r7yCE2yEZ3rZaY&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=GWR70fCyRf4g6Diyqu8ftg&oh=00_AfEL8Jh_yY536N04GeokkGhRKy_aeeqkBb2IBKY_4KQ5MQ&oe=67F948E3" alt="baler">
+    <div class="layer"></div>
+    <div class="info">
+      <p>Serene sunset view</p>
+    </div>
+  </div>
+
+  <!-- New images -->
+  <div class="card">
+    <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/489070602_1719455428954561_4827467698513625800_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEvcEjJh2qHDeH3F0xDQtVYhLjHu2BpfMaEuMe7YGl8xi6fp_oyqGPEFy4Ci2kE17w7aV645lxlcEVqKD-6SuWA&_nc_ohc=lgKo2HQLYpYQ7kNvwG69H3m&_nc_oc=Adlf6973FH7p6z-08WtfjB3VlUVXXKR0z8wXtKWvlMCkvDqzyur51hDHMNgqhIwrFjg&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=WxosV347wAxKw9U_xdXNYQ&oh=00_AfE34g_eJADYfI6_BjjX4RXfiMz_mxPFAgKzrQerDUu_6w&oe=67F9413F" alt="baler">
+    <div class="layer"></div>
+    <div class="info">
+      <p>Peaceful nature</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/489299590_1719455488954555_4203809243187682037_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFDnnZy6FBpsFg0rAa7W7yI_G6JmHpuNmj8bomYem42aEAIWdzmAlcKnoFcaaXWc-eCr-qvz5K6vHKI5FDTLXWb&_nc_ohc=_iEWzaZ-9O8Q7kNvwGzqiZ3&_nc_oc=AdlZRHGQR-ZuWlumAxairjZM8T4XLSlnvLCwp0EmkjtDhTpgMKjEgXl41FWo6uNzKcc&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=7BsUidSbJ8gSmVlrSco7jw&oh=00_AfGtVtU6HM0hnVdIMga-j5w-MOLN_Cfm9w5YeiAsP6brPQ&oe=67F97359"
+      alt="baler">
+    <div class="layer"></div>
+    <div class="info">
+      <p>Peaceful beach vibes</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/488910857_1719455285621242_8662862232193250702_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGQAxEtHuVObILKtqLZKgb5Kj5lE5A5Yi4qPmUTkDliLoJL3QTUW9JHUYP7DMLioIUevk-Ai9BTRNkP2t4U3cxe&_nc_ohc=WnjD0qj8HDAQ7kNvwGnrlst&_nc_oc=AdlKW3nzVvI3-YwnYevLF4lZnTM6wJl9EU6JYUsqivlfALt2xD_rj4t3R9tmufVS8iY&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=9vipuonV0qFhaYvSuv1Krw&oh=00_AfFXeGWcNzmaGl8F2HLXYDpUD1zol11hKvrXzYIEW0xb4A&oe=67F9475D" alt="baler">
+    <div class="layer"></div>
+    <div class="info">
+      <p>Breathtaking views</p>
+    </div>
+  </
+  
+  
+
+
+  <div class="footer">&copy; 2025 All Rights Reserved. Created by Krz Aqn</div>
+
+</body>
+
+</html>
